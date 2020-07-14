@@ -18,4 +18,25 @@ const:
 •	const must be initialized during declaration.
 
 
+eg:
+if (true) {
+  var alpha = 'godzilla!';
+  let beta= 'gorilla';
+  const gama = 'chimpanzee!';
+
+  console.log(alpha); // 'godzilla!';
+ 
+  console.log(beta); // 'gorilla';
+  console.log(gama); // 'chimpanzee!';
+}
+
+console.log(alpha); // 'godzilla!';
+console.log(beta); // ReferenceError: beta is not defined
+console.log(gama); // ReferenceError: gama is not defined
+Notice the visibility of  alpha isn’t limited by the if-statement block. However, both beta and gama are limited in visibility to the block of code.
+
+
+
+
+
 
