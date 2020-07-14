@@ -1,3 +1,4 @@
+datatypes in javascript:
 number: integer or floating-point, integers.
 eg :  let n = 123;
       n = 12.345:
