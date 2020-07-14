@@ -1,0 +1,21 @@
+var:
+•	var declarations are globally scoped or function scoped .
+•	var variables can be updated and re-declared within its scope. 
+•	var variables are initialized with undefined, 
+•	var  can be declared without being initialized
+
+let: 
+•	let is block scoped.
+•	let variables can be updated but not re-declared. 
+•	let  variables are not initialized.
+•	let can be declared without being initialized.
+
+
+const: 
+•	const is block scoped.
+•	const variables can neither be updated nor re-declared.
+•	const variables are not initialized.
+•	const must be initialized during declaration.
+
+
+
