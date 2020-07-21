@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+p2{
+    font-size: 22px;
+    color:#ff0000;
+}
+</style>
+<body>
+            
+   <button id="dark">Switch to Dark Mode</button>
+
+    <h1 id="title">Qn 3</h1>
+    <h4 id="time"></h4>
+    <p>Welcome Message</p>
+    Name: <input type="text" id="myname" name="fname" value="Bhavatha"> <br>
+    
+    <p2>WELCOME BHAVATHA</p2>
+    <p id="myname"></p>
+    <p id="demo"></p>
+<script>
+const dmode = document.getElementById('dark');
+
+dmode.onclick = function changeColor(){
+    
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white';
+    document.body.style.fontFamily = 'Helvetica';
+   
+}
+
+const ctime = document.getElementById('time');
+function clock(){
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    ctime.innerText = time;
+}
+
+setInterval(clock,1000);
+
+
+
+function myFunction() {
+  var x = document.getElementById("myname").username;
+  document.getElementById("demo").innerHTML = x;
+}
+
+
+
+    
+
+    </script>
+</body>
+</html>
+
+    
