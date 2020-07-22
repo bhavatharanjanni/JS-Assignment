@@ -1,0 +1,133 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Assignment day 2</title>
+<style>
+h1{
+  color: White;
+  text-align: center;
+  background-color:black;
+} 
+body{
+background-color:teal;
+}
+</style>
+</head>
+<body>
+
+<h1>Assignment questions for Day 1</h1>
+<h2>Question 1:Various methods in console function</h2>
+
+<p>Console enables us to interact with a web page by executing javascript expression in the content of the page.<br/>
+Eg-1:console.log()<br/>
+         To Print the output of the console<br/>
+           console.log(123);  o/p-123<br/>
+           console.log('bhava'); o/p-bhava<br/>
+           
+  Eg-2:console.warn<br/>
+                  For log warning message to the console.  (Highlighted with yellow color.}  <br/> 
+                  console.warn('This is a warning.');  o/p-!This is warning <br/>
+
+   Eg-3:console.error()<br/>
+           For log error message to the console. Useful in testing of code. (Highlighted with red color.} <br/> 
+           console.error('This is a simple error');  o/p:!This is simple error.<br/>
+           
+   Eg-4:Console.clear() :
+           To clear the console. 
+           
+           
+           
+   Eg-5:console.table()<br/>
+   This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.
+console.table({'a':1, 'b':2});    <br/>     o/p-Index        values<br/>
+                                             a            1
+                                             b            2  
+
+
+</p>
+
+
+
+
+<h2>Question 2:Difference between var,const,let</h2>
+<p>
+
+var:<br/>
+•	var declarations are globally scoped or function scoped .<br/>
+•	var variables can be updated and re-declared within its scope.<br/> 
+•	var variables are initialized with undefined. <br/>
+•	var  can be declared without being initialized<br/>
+
+let: <br/>
+•	let is block scoped.<br/>
+•	let variables can be updated but not re-declared. <br/>
+•	let  variables are not initialized.<br/>
+•	let can be declared without being initialized.<br/>
+
+
+const: <br/>
+•	const is block scoped.<br/>
+•	const variables can neither be updated nor re-declared.<br/>
+•	const variables are not initialized.<br/>
+•	const must be initialized during declaration.<br/>
+
+
+eg:<br/>
+if (true) {<br/>
+  var alpha = 'godzilla!';<br/>
+  let beta= 'gorilla';<br/>
+  const gama = 'chimpanzee!';<br/>
+
+  console.log(alpha); // 'godzilla!';<br/>
+ 
+  console.log(beta); // 'gorilla';<br/>
+  console.log(gama); // 'chimpanzee!';<br/>
+}
+
+console.log(alpha); // 'godzilla!';<br/>
+console.log(beta); // ReferenceError: beta is not defined<br/>
+console.log(gama); // ReferenceError: gama is not defined<br/>
+Notice the visibility of  alpha isn’t limited by the if-statement block. However, both beta and gama are limited in visibility to the block of code.</p>
+
+
+
+
+<h2>Question 3:Avaible datatypes in javascript</h2>
+
+<p>
+
+Datatypes in javascript:<br/>
+number: integer or floating-point, integers.<br/>
+eg :  let n = 123;
+      n = 12.345:<br/>
+
+bigint:for integer numbers of arbitrary length.<br/>
+eg :const bigInt = 1234567890123456789012345678901234567890n;<br/>
+
+string : A string may have zero or more characters, there’s no separate single-character type.<br/>
+eg:     let str = "Hello";<br/>
+        let str2 = 'Hi Eveyone'<br/>;
+
+boolean : true/false.<br/>
+eg:et nameFieldChecked = true; // yes, name field is checked<br/>
+
+null :unknown values – a standalone type that has a single value null.<br/>
+eg:let age = null;<br/>
+
+
+undefined : unassigned values – a standalone type that has a single value undefined.<br/>
+eg:If a variable is declared, but not assigned, then its value is undefined:<br/>
+    let age;<br/>
+
+
+object : complex data structures.<br/>
+eg:   typeof 0 // "number"<br/>
+      typeof true // "boolean"<br/>
+
+symbol :unique identifiers.<br/>
+eg:typeof Symbol("id") // "symbol"<br/>
+</p>
+</body>
+</html>
