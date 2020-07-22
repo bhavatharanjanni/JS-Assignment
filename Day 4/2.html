@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Destruction of object</title>
+</head>
+<body>
+<script>
+const student={
+name:"Helsinki",
+age:24,
+projects:{
+dicegame:"Two player dice game using java script"
+}
+};
+const{projects:{dicegame}} = student;
+
+
+dicegame;
+
+</script>
+</body>
+</html>
