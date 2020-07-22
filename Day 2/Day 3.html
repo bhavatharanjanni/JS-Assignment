@@ -1,0 +1,88 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Assignment day 2</title>
+<style>
+h1{
+  color: White;
+  text-align: center;
+  background-color:black;
+} 
+body{
+background-color:teal;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Assignment questions for day 3</h1>
+<h2>Question 1</h2>
+<p></p>
+<h3>Method1</h3>
+<p>The prompt() method lets you open a client-side window and take input from a user.</p>
+<h3>Code Example</h3>
+
+<p>var customerName = prompt("Please enter your name", "<name goes here>");<br/>
+
+if (customerName!= null)<br/> {
+
+    document.getElementById("welcome").innerHTML =
+
+    "Hello " + customerName + "! How are you today?";<br/>
+
+}
+</p>
+<h3>Method 2</h3>
+<p>Confirm() method returns either a boolean true result if the user clicks "OK" or the boolean false result if the user clicks "Cancel." </p>
+<h3>code Example</h3>
+<p>var r = confirm("Are you sure you want to send a payment?");<br/>
+
+if (r == true)<br/> {<br/>
+
+    x = "Payment sent!";<br/>
+
+} else {
+ 
+    x = "Payment cancelled!";
+
+}</p>
+<h2>Question 2</h2>
+<p><h3>String Methods in Java Script</h3></p>
+<ul><li>Slice</li></ul>
+   <p>slice() extracts a part of a string and returns the extracted part in a new string.<br/>
+   Example:<br/>
+   var str = "Apple, Banana, Kiwi";<br/>
+var res = str.slice(7, 13);<br/>
+O/P:Banana</p>
+
+<ul><li>Substring</li></ul>
+<p>substring() is similar to slice().The difference is that substring() cannot accept negative indexes.
+Example<br/>
+var str = "Apple, Banana, Kiwi";<br/>
+var res = str.substring(7, 13);<br/>
+O/P:Banana</p>
+<ul><li>Replace </li></ul>
+<p>The replace() method replaces a specified value with another value in a string</p>
+
+<p>Example<br/>
+str = "Please visit Microsoft!";<br/>
+var n = str.replace("Microsoft", "Google");<br/>
+O/P:Please visit Google.</p>
+<p><h3>Array Methods in Java Script</h3></p>
+<ul><li>Join</li></ul>
+<p>The join() method also joins all array elements into a string.</P>
+Example</br>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];</br>
+document.getElementById("demo").innerHTML = fruits.join(" * ");</br>
+O/P:Banana * Orange * Apple * Mango</p>
+
+
+<p>I have gone through many documentation related to string and array methods<p>
+
+<h1>THANK YOU!!</h>
+
+</body>
+</html>
